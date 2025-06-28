@@ -1,0 +1,5 @@
+# Ignore all x64 build folders
+**/x64/
+
+# Ignore Visual Studio user-specific project files
+*.vcxproj.user
