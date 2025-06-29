@@ -1,0 +1,43 @@
+/* Change Log helperFunctions.h */
+/* YS - 06 / 29 / 2025 - Initial Creation */
+
+#pragma once
+
+#include <iostream>
+#include <atomic>
+
+
+namespace GLOBALS {
+
+/*************************************************************
+	Function Name - set_isCommandLineActive(bool flag)
+	@brief Setter for the isCommandLineActive data member
+	@param Bool to set isCommandLineActive to 
+*************************************************************/
+	void set_isCommandLineActive(bool flag);
+
+/*************************************************************
+	Function Name - get_isCommandLineActive()
+	@brief Getter for the isCommandLineActive data member
+	@param N/A
+*************************************************************/
+	bool get_isCommandLineActive();
+
+/*************************************************************
+	Function Name - set_workingDir(std::string filePath)
+	@brief Setter for the workingDir data member
+	@param Filepath to set the data member to
+*************************************************************/
+	void set_workingDir(std::string filePath);
+
+/*************************************************************
+	Function Name - set_workingDir()
+	@brief Getter for the workingDir data member
+	@param N/A
+*************************************************************/
+	std::string get_workingDir();
+
+	// Data Members
+	static std::atomic<bool> isCommandLineActive = true;
+	static std::string workingDir;
+}

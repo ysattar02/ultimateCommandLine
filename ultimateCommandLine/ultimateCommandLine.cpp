@@ -3,12 +3,16 @@
 /* JR - 06 / 28 / 2025 - Began Main */
 
 #include "helperFunctions.h"
+#include "globals.h"
 #include "commands.h"
 
 #include <iostream>
-#include<string>
-#include<sstream>
-#include<vector>
+#include <string>
+#include <sstream>
+#include <filesystem>
+#include <vector>
+
+using namespace GLOBALS;
 
 enum COMMANDS {
     LS = 1,
@@ -17,14 +21,25 @@ enum COMMANDS {
     UNKNOWN = 100
 };
 
+void initCommandLine() {
+    
+    //set current path to the working path
+    std::filesystem::path currentPath = std::filesystem::current_path();
+    GLOBALS::set_workingDir(currentPath.generic_string());
+
+    //set running flag
+    GLOBALS::isCommandLineActive = true;
+}
+
 int main() {
 
-    bool isCommandLineActive = true;
+    initCommandLine();
 
     while (isCommandLineActive) {
 
         //display current directory
-        displayCurrentDirectory();
+        std::string currWorkingDir = GLOBALS::get_workingDir();
+        std::cout << currWorkingDir << "> ";
         
         //grab the full line from console
         std::string input;
@@ -39,9 +54,20 @@ int main() {
         while (ss >> token) {
             parsedInput.push_back(token);
         }
-        
-        //decide the action to take
-        int cmdNum = commandStringToEnum(parsedInput[0]);
+
+        //container to hold switch case
+        int cmdNum;
+
+        //do an empty check
+        if (parsedInput.size() == 0) {
+            cmdNum = UNKNOWN;
+        }
+        else {
+            //decide the action to take
+            cmdNum = commandStringToEnum(parsedInput[0]);
+        }
+
+        //do processing on command
         switch (cmdNum) {
             case LS:
                 //add function call here
