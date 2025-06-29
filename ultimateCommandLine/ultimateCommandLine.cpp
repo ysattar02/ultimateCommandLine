@@ -70,7 +70,7 @@ int main() {
         //do processing on command
         switch (cmdNum) {
             case LS:
-                //add function call here
+                listFiles(parsedInput);
                 break;
             case CD:
                 //add function call here

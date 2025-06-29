@@ -4,3 +4,5 @@
 # Ignore Visual Studio user-specific project files
 *.vcxproj.user
 *.vcxproj.filters
+*.vsidx
+*.json

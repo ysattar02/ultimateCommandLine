@@ -4,6 +4,24 @@
 #include "commands.h"
 
 void listFiles(std::vector <std::string>& fullCmd) {
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	return;
 }
 
