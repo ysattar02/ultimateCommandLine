@@ -44,7 +44,7 @@ int main() {
         int cmdNum = commandStringToEnum(parsedInput[0]);
         switch (cmdNum) {
             case LS:
-                //add function call here
+                listFiles(parsedInput);
                 break;
             case CD:
                 //add function call here
