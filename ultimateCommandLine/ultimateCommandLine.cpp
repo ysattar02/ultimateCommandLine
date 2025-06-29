@@ -3,6 +3,7 @@
 /* JR - 06 / 28 / 2025 - Began Main */
 
 #include "helperFunctions.h"
+#include "commands.h"
 
 #include <iostream>
 #include<string>
@@ -12,12 +13,15 @@
 enum COMMANDS {
     LS = 1,
     CD = 2,
+    QUIT = 99,
     UNKNOWN = 100
 };
 
 int main() {
 
-    while (true) {
+    bool isCommandLineActive = true;
+
+    while (isCommandLineActive) {
 
         //display current directory
         displayCurrentDirectory();
@@ -47,6 +51,10 @@ int main() {
                 break;
             case UNKNOWN:
                 std::cerr << "Command Not Recognized" << std::endl;
+                break;
+            case QUIT:
+                std::cout << "Command Line Terminating" << std::endl;
+                isCommandLineActive = false;
                 break;
             default:
                 std::cerr << "Command Not Recognized" << std::endl;

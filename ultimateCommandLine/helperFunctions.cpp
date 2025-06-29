@@ -5,7 +5,8 @@
 
 std::unordered_map <std::string, int> COMMANDMAPPING = {
 	{"ls", 1},
-	{"cd", 2}
+	{"cd", 2},
+	{"quit", 99}
 };
 
 void displayCurrentDirectory() {
