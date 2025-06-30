@@ -1,9 +1,8 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\",
+  "WorkspaceRootPath": "C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\",
   "Documents": [
     {
-<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\ultimateCommandLine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:ultimateCommandLine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -30,18 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\commands.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:commands.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-=======
-      "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\commands.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:commands.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\ultimateCommandLine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:ultimateCommandLine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\helperFunctions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:helperFunctions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
->>>>>>> b29286c3da0414a2c1dc52acdbd635a6b0f16a2d
     }
   ],
   "DocumentGroupContainers": [
@@ -51,7 +38,6 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-<<<<<<< HEAD
           "SelectedChildIndex": 6,
           "Children": [
             {
@@ -64,8 +50,7 @@
               "RelativeToolTip": "globals.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-29T18:45:08.074Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-29T18:45:08.074Z"
             },
             {
               "$type": "Document",
@@ -77,33 +62,23 @@
               "RelativeToolTip": "globals.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-29T18:44:55.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-29T18:44:55.714Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-=======
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
->>>>>>> b29286c3da0414a2c1dc52acdbd635a6b0f16a2d
               "Title": "commands.cpp",
-              "DocumentMoniker": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\commands.cpp",
+              "DocumentMoniker": "C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\commands.cpp",
               "RelativeDocumentMoniker": "commands.cpp",
-              "ToolTip": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\commands.cpp",
+              "ToolTip": "C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\commands.cpp",
               "RelativeToolTip": "commands.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-29T17:04:17.087Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-29T17:04:17.087Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-<<<<<<< HEAD
               "Title": "commands.h",
               "DocumentMoniker": "C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\commands.h",
               "RelativeDocumentMoniker": "commands.h",
@@ -111,8 +86,7 @@
               "RelativeToolTip": "commands.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-29T17:04:04.313Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-29T17:04:04.313Z"
             },
             {
               "$type": "Document",
@@ -124,18 +98,15 @@
               "RelativeToolTip": "helperFunctions.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-28T20:51:23.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-28T20:51:23.645Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-=======
->>>>>>> b29286c3da0414a2c1dc52acdbd635a6b0f16a2d
               "Title": "helperFunctions.cpp",
-              "DocumentMoniker": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\helperFunctions.cpp",
+              "DocumentMoniker": "C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\helperFunctions.cpp",
               "RelativeDocumentMoniker": "helperFunctions.cpp",
-              "ToolTip": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\helperFunctions.cpp",
+              "ToolTip": "C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\helperFunctions.cpp",
               "RelativeToolTip": "helperFunctions.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -143,17 +114,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ultimateCommandLine.cpp",
-              "DocumentMoniker": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\ultimateCommandLine.cpp",
+              "DocumentMoniker": "C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\ultimateCommandLine.cpp",
               "RelativeDocumentMoniker": "ultimateCommandLine.cpp",
-              "ToolTip": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\ultimateCommandLine.cpp",
+              "ToolTip": "C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\ultimateCommandLine.cpp",
               "RelativeToolTip": "ultimateCommandLine.cpp",
-<<<<<<< HEAD
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEIAAAAjAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAC8AAAAWAAAAAAAAAA==",
->>>>>>> b29286c3da0414a2c1dc52acdbd635a6b0f16a2d
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-28T18:55:12.839Z",
               "EditorCaption": ""
