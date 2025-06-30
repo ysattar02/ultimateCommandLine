@@ -5,13 +5,18 @@
 
 void listFiles(std::vector <std::string>& fullCmd) {
 
-	if (fullCmd.size() == 1) {
+	std::string path = "";
 
+	for (int i = 1; i < fullCmd.size(); i++) {
+
+		path += fullCmd[i];
 	}
 
+	std::vector<std::string> directories = listDirInPath(path);
 
-
-
+	for (int i = 0; i < directories.size(); i++) {
+		std::cout << directories[i] << std::endl;
+	}
 
 	return;
 }
