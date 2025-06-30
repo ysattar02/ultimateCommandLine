@@ -62,8 +62,7 @@
               "RelativeToolTip": "globals.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-29T18:44:55.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-29T18:44:55.714Z"
             },
             {
               "$type": "Document",
@@ -73,7 +72,7 @@
               "RelativeDocumentMoniker": "commands.cpp",
               "ToolTip": "C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\commands.cpp",
               "RelativeToolTip": "commands.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-06-29T17:04:17.087Z",
               "EditorCaption": ""
@@ -100,8 +99,7 @@
               "RelativeToolTip": "helperFunctions.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-28T20:51:23.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-28T20:51:23.645Z"
             },
             {
               "$type": "Document",
@@ -113,8 +111,7 @@
               "RelativeToolTip": "helperFunctions.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-28T20:50:46.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-28T20:50:46.658Z"
             },
             {
               "$type": "Document",
@@ -126,8 +123,7 @@
               "RelativeToolTip": "ultimateCommandLine.cpp",
               "ViewState": "AgIAADYAAAAAAAAAAAAAABEAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-28T18:55:12.839Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-28T18:55:12.839Z"
             }
           ]
         }

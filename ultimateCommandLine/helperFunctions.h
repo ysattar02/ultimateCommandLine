@@ -1,10 +1,11 @@
 /* Change Log helperFunctions.h */
-/* YS - 06 / 28 / 2025 - Initial Creation */
+/* JR - 06 / 29 / 2025 - Added listDirInPath function */
 
 #pragma once
 
 #include <filesystem>
 #include <iostream>
+#include <string>
 #include <unordered_map>
 
 
@@ -21,3 +22,10 @@ void displayCurrentDirectory(const std::string& fullCommand);
 	@param std::string - Command to translate to Enum
 *************************************************************/
 int commandStringToEnum(const std::string& fullCommand);
+
+/*************************************************************
+	Function Name - listDirInPath(const std::string& path)
+	@brief Return the list of directories in the specified path
+	@param std::string - Path to list directories from 
+*************************************************************/
+std::vector<std::string> listDirInPath(const std::string& path);

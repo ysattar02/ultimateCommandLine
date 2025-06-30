@@ -1,5 +1,5 @@
 /* Change Log helperFunctions.cpp */
-/* YS - 06 / 28 / 2025 - Initial Creation */
+/* JR - 06 / 29 / 2025 - Added listDirInPath function */
 
 #include "helperFunctions.h"
 
@@ -23,4 +23,35 @@ int commandStringToEnum(const std::string &command) {
 	else {
 		return 100;
 	}
+}
+
+std::vector<std::string> listDirInPath(const std::string& path) {
+
+    std::vector<std::string> directories;
+    std::filesystem::path directorypath = path;
+
+    // To check if the directory exists or not
+    if (std::filesystem::exists(directorypath)
+        && std::filesystem::is_directory(directorypath)) {
+
+        // Loop through each item (file or subdirectory) in
+        // the directory
+
+        for (const auto& entry :
+            std::filesystem::directory_iterator(directorypath)) {
+
+            // Store the path of the file or subdirectory to vector
+            directories.push_back(entry.path().string());
+
+        }
+
+        return directories;
+
+    }
+
+    else {
+        // Handle the case where the directory doesn't exist
+        std::cerr << "Directory not found." << std::endl;
+    }
+
 }
