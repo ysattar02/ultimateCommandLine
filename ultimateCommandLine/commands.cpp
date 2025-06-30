@@ -5,18 +5,9 @@
 
 void listFiles(std::vector <std::string>& fullCmd) {
 
-	
+	if (fullCmd.size() == 1) {
 
-
-
-
-
-
-
-
-
-
-
+	}
 
 
 

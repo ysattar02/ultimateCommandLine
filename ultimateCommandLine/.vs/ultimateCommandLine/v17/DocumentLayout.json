@@ -1,70 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\commands.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:commands.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\ultimateCommandLine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:ultimateCommandLine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\helperFunctions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:helperFunctions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "commands.cpp",
-              "DocumentMoniker": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\commands.cpp",
-              "RelativeDocumentMoniker": "commands.cpp",
-              "ToolTip": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\commands.cpp",
-              "RelativeToolTip": "commands.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-29T17:04:17.087Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "helperFunctions.cpp",
-              "DocumentMoniker": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\helperFunctions.cpp",
-              "RelativeDocumentMoniker": "helperFunctions.cpp",
-              "ToolTip": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\helperFunctions.cpp",
-              "RelativeToolTip": "helperFunctions.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-28T20:50:46.658Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ultimateCommandLine.cpp",
-              "DocumentMoniker": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\ultimateCommandLine.cpp",
-              "RelativeDocumentMoniker": "ultimateCommandLine.cpp",
-              "ToolTip": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\ultimateCommandLine.cpp",
-              "RelativeToolTip": "ultimateCommandLine.cpp",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAC8AAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-28T18:55:12.839Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }
