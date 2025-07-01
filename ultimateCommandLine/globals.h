@@ -4,7 +4,11 @@
 #pragma once
 
 #include <iostream>
+#include <filesystem>
 #include <atomic>
+#include <string>
+#include <sstream>
+#include <vector>
 
 
 namespace GLOBALS {

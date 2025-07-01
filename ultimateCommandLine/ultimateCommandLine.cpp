@@ -6,12 +6,6 @@
 #include "globals.h"
 #include "commands.h"
 
-#include <iostream>
-#include <string>
-#include <sstream>
-#include <filesystem>
-#include <vector>
-
 using namespace GLOBALS;
 
 enum COMMANDS {
@@ -73,7 +67,7 @@ int main() {
                 listFiles(parsedInput);
                 break;
             case CD:
-                //add function call here
+                changeDirectory(parsedInput);
                 break;
             case UNKNOWN:
                 std::cerr << "Command Not Recognized" << std::endl;
