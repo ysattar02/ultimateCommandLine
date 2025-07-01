@@ -11,7 +11,7 @@ void listFiles(std::vector <std::string>& fullCmd) {
 	std::string path = "";
 
 	if (fullCmd.size() < 2)
-		path = std::filesystem::current_path().string();
+		path = GLOBALS::get_workingDir();
 	else {
 		for (int i = 1; i < fullCmd.size(); i++) {
 			path += fullCmd[i];

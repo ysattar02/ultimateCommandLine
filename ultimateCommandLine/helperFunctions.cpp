@@ -41,7 +41,7 @@ std::vector<std::string> listDirInPath(const std::string& path) {
             std::filesystem::directory_iterator(directorypath)) {
 
             // Store the path of the file or subdirectory to vector
-            directories.push_back(entry.path().string());
+            directories.push_back(entry.path().filename().string());
 
         }
 

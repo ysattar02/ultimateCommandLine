@@ -3,49 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\",
   "Documents": [
     {
-<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\ultimateCommandLine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:ultimateCommandLine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\commands.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:commands.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\commands.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:commands.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\helperFunctions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:helperFunctions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-=======
-      "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\commands.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\commands.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:commands.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\commands.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:commands.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\helperFunctions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:helperFunctions.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\helperFunctions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:helperFunctions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\globals.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:globals.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\ultimateCommandLine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:ultimateCommandLine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\globals.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:globals.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
->>>>>>> 29275d9461fb3a190c58f133e359f9b48e17e5fe
     }
   ],
   "DocumentGroupContainers": [
@@ -55,117 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-<<<<<<< HEAD
-              "DocumentIndex": 2,
-              "Title": "commands.h",
-              "DocumentMoniker": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\commands.h",
-              "RelativeDocumentMoniker": "commands.h",
-              "ToolTip": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\commands.h",
-              "RelativeToolTip": "commands.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-01T18:42:16.317Z",
-=======
-              "DocumentIndex": 4,
-              "Title": "globals.h",
-              "DocumentMoniker": "C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\globals.h",
-              "RelativeDocumentMoniker": "globals.h",
-              "ToolTip": "C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\globals.h",
-              "RelativeToolTip": "globals.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-29T18:45:08.074Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "globals.cpp",
-              "DocumentMoniker": "C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\globals.cpp",
-              "RelativeDocumentMoniker": "globals.cpp",
-              "ToolTip": "C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\globals.cpp",
-              "RelativeToolTip": "globals.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-29T18:44:55.714Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "commands.cpp",
-              "DocumentMoniker": "C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\commands.cpp",
-              "RelativeDocumentMoniker": "commands.cpp",
-              "ToolTip": "C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\commands.cpp",
-              "RelativeToolTip": "commands.cpp",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACcAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-06-29T17:04:17.087Z",
->>>>>>> 29275d9461fb3a190c58f133e359f9b48e17e5fe
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-<<<<<<< HEAD
-              "Title": "commands.cpp",
-              "DocumentMoniker": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\commands.cpp",
-              "RelativeDocumentMoniker": "commands.cpp",
-              "ToolTip": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\commands.cpp",
-              "RelativeToolTip": "commands.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-01T18:32:27.357Z",
-              "EditorCaption": ""
-=======
-              "Title": "commands.h",
-              "DocumentMoniker": "C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\commands.h",
-              "RelativeDocumentMoniker": "commands.h",
-              "ToolTip": "C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\commands.h",
-              "RelativeToolTip": "commands.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-06-29T17:04:04.313Z"
->>>>>>> 29275d9461fb3a190c58f133e359f9b48e17e5fe
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "helperFunctions.cpp",
               "DocumentMoniker": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\helperFunctions.cpp",
               "RelativeDocumentMoniker": "helperFunctions.cpp",
               "ToolTip": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\helperFunctions.cpp",
               "RelativeToolTip": "helperFunctions.cpp",
-<<<<<<< HEAD
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
->>>>>>> 29275d9461fb3a190c58f133e359f9b48e17e5fe
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACsAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-01T18:18:09.029Z",
+              "WhenOpened": "2025-07-01T19:29:14.499Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-<<<<<<< HEAD
+              "DocumentIndex": 2,
+              "Title": "commands.cpp",
+              "DocumentMoniker": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\commands.cpp",
+              "RelativeDocumentMoniker": "commands.cpp",
+              "ToolTip": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\commands.cpp",
+              "RelativeToolTip": "commands.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-07-01T19:26:32.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-=======
-              "DocumentIndex": 5,
->>>>>>> 29275d9461fb3a190c58f133e359f9b48e17e5fe
               "Title": "ultimateCommandLine.cpp",
               "DocumentMoniker": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\ultimateCommandLine.cpp",
               "RelativeDocumentMoniker": "ultimateCommandLine.cpp",
               "ToolTip": "C:\\Users\\jawaa\\Documents\\ultimateCommandLine\\ultimateCommandLine\\ultimateCommandLine.cpp",
               "RelativeToolTip": "ultimateCommandLine.cpp",
-<<<<<<< HEAD
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAFgAAAAFAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAVAAAAAAAAAA==",
->>>>>>> 29275d9461fb3a190c58f133e359f9b48e17e5fe
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-01T03:03:41.974Z",
+              "WhenOpened": "2025-07-01T19:26:40.594Z",
               "EditorCaption": ""
             }
           ]
