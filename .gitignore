@@ -6,3 +6,4 @@
 *.vcxproj.filters
 *.vsidx
 *.json
+*.ipch
