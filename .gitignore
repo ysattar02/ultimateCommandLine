@@ -8,6 +8,12 @@
 *.json
 *.ipch
 *.suo
+<<<<<<< HEAD
 *.db
 *.obj
 *.exe
+=======
+*.obj
+*.exe
+*.db
+>>>>>>> y_changeDirectory
