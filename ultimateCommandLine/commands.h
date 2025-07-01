@@ -8,6 +8,7 @@
 #include <unordered_map>
 #include <string>
 #include "helperFunctions.h"
+#include "globals.h"
 
 
 /*************************************************************

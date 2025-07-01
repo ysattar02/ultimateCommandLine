@@ -7,9 +7,12 @@ void listFiles(std::vector <std::string>& fullCmd) {
 
 	std::string path = "";
 
-	for (int i = 1; i < fullCmd.size(); i++) {
-
-		path += fullCmd[i];
+	if (fullCmd.size() < 2)
+		path = std::filesystem::current_path().string();
+	else {
+		for (int i = 1; i < fullCmd.size(); i++) {
+			path += fullCmd[i];
+		}
 	}
 
 	std::vector<std::string> directories = listDirInPath(path);
