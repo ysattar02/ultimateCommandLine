@@ -1,6 +1,3 @@
-/* Change Log helperFunctions.h */
-/* YS - 06 / 29 / 2025 - Initial Creation */
-
 #include "globals.h"
 
 

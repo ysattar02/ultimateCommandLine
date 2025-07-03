@@ -1,6 +1,3 @@
-/* Change Log helperFunctions.cpp */
-/* JR - 06 / 29 / 2025 - Added listDirInPath function */
-
 #include "helperFunctions.h"
 
 std::unordered_map <std::string, int> COMMANDMAPPING = {
@@ -9,6 +6,8 @@ std::unordered_map <std::string, int> COMMANDMAPPING = {
     {"rm", 3},
     {"rmdir", 4},
     {"pwd", 5},
+    {"touch", 6},
+    {"mkdir", 7},
 	{"quit", 99}
 };
 

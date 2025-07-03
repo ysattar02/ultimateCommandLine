@@ -1,7 +1,3 @@
-/* Change Log ultimateCommandLine.cpp */
-/* YS - 06 / 28 / 2025 - Added Change Log */
-/* JR - 06 / 28 / 2025 - Began Main */
-
 #include "helperFunctions.h"
 #include "globals.h"
 #include "commands.h"
@@ -14,6 +10,8 @@ enum COMMANDS {
     RM = 3,
     RMDIR = 4,
     PWD = 5,
+    TOUCH = 6,
+    MKDIR = 7,
     QUIT = 99,
     UNKNOWN = 100
 };
@@ -22,7 +20,7 @@ void initCommandLine() {
     
     //set current path to the working path
     std::filesystem::path currentPath = std::filesystem::current_path();
-    GLOBALS::set_workingDir(currentPath.generic_string());
+    GLOBALS::set_workingDir(currentPath);
 
     //set running flag
     GLOBALS::isCommandLineActive = true;
@@ -36,7 +34,7 @@ int main() {
 
         //display current directory
         std::filesystem::path currWorkingDir = GLOBALS::get_workingDir();
-        std::cout << currWorkingDir << "> ";
+        std::cout << currWorkingDir.string() << "> ";
         
         //grab the full line from console
         std::string input;
@@ -77,8 +75,12 @@ int main() {
                 break;
             case RMDIR:
                 removeDirectory(parsedInput);
+                break;
             case PWD:
                 printWorkingDir();
+                break;
+            case MKDIR:
+                makeDirectory(parsedInput);
                 break;
             case UNKNOWN:
                 std::cerr << "Command Not Recognized" << std::endl;

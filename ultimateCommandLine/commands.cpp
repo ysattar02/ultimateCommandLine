@@ -1,6 +1,3 @@
-/* Change Log helperFunctions.cpp */
-/* YS - 06 / 29 / 2025 - Initial Creation */
-
 #include "commands.h"
 #include "globals.h"
 
@@ -170,9 +167,8 @@ void removeDirectory(std::vector <std::string>& fullCmd) {
 
 	//check if absolute and resolve if it isn't
 	std::string temp;
-	if (!target.is_absolute()) { //this is the bug, absolute is taking the path to exe
+	if (!target.is_absolute()) { 
 		target = GLOBALS::workingDir.string() + target.string();
-		//std::replace(temp.begin(), temp.end(), '/', '\\');
 	}
 
 	//make sure directory exists
@@ -205,10 +201,47 @@ void removeDirectory(std::vector <std::string>& fullCmd) {
 		std::cin >> decision;
 		if (decision == 'Y' || decision == 'y') {
 			std::filesystem::remove_all(target);
-		}
-		else {
+			std::cin.clear();
+			std::cin.ignore();
 			return;
 		}
+		else {
+			std::cin.clear();
+			std::cin.ignore();
+			return;
+		}
+	}
+
+	return;
+}
+
+void makeDirectory(std::vector <std::string>& fullCmd) {
+
+	//base case 
+	if (fullCmd.size() > 2) {
+		return;
+	}
+
+	//filepath to directory to make
+	std::filesystem::path target = fullCmd[1];
+
+	//resolve path to absolute
+	if (!target.is_absolute()) {
+		target = GLOBALS::workingDir.string() + target.string();
+	}
+
+	//make sure directory doesn't exist
+	bool flag = std::filesystem::exists(target);
+	if (flag) {
+		std::cerr << "Directory Already Exists" << std::endl;
+		return;
+	}
+
+	//make the directory
+	bool wasDirectoryMade = std::filesystem::create_directory(target);
+	if (!wasDirectoryMade) {
+		std::cerr << "Directory Creation Failed" << std::endl;
+		return;
 	}
 
 	return;

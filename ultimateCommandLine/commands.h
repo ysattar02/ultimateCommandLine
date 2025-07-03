@@ -1,6 +1,3 @@
-/* Change Log helperFunctions.h */
-/* YS - 06 / 29 / 2025 - Initial Creation */
-
 #pragma once
 
 #include <filesystem>
@@ -38,6 +35,13 @@ void removeFile(std::vector <std::string>& fullCmd);
 	@param Vector of std::string containing entire command word by word
 *************************************************************/
 void removeDirectory(std::vector <std::string>& fullCmd);
+
+/*************************************************************
+	Function Name - makeDirectory()
+	@brief Implements functionality of "mkdir"
+	@param Vector of std::string containing entire command word by word
+*************************************************************/
+void makeDirectory(std::vector <std::string>& fullCmd);
 
 /*************************************************************
 	Function Name - printWorkingDir()

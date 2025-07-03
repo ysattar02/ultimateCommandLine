@@ -1,6 +1,3 @@
-/* Change Log helperFunctions.h */
-/* JR - 06 / 29 / 2025 - Added listDirInPath function */
-
 #pragma once
 
 #include <filesystem>
