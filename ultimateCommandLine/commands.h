@@ -24,3 +24,10 @@ void listFiles(std::vector <std::string> &fullCmd);
 	@param Vector of std::string containing entire command word by word
 *************************************************************/
 void changeDirectory(std::vector <std::string>& fullCmd);
+
+/*************************************************************
+	Function Name - printWorkingDir()
+	@brief Prints the currrent working directory 
+	@param none
+*************************************************************/
+void printWorkingDir(void);

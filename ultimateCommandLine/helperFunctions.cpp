@@ -6,6 +6,7 @@
 std::unordered_map <std::string, int> COMMANDMAPPING = {
 	{"ls", 1},
 	{"cd", 2},
+    {"pwd", 5},
 	{"quit", 99}
 };
 

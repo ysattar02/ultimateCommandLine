@@ -133,3 +133,9 @@ void changeDirectory(std::vector <std::string>& fullCmd) {
 
 	return;
 }
+
+void printWorkingDir(void) {
+	
+	std::cout << GLOBALS::get_workingDir() << std::endl;;
+
+}
