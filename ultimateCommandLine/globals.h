@@ -4,6 +4,7 @@
 #pragma once
 
 #include <iostream>
+#include <cstdlib>
 #include <filesystem>
 #include <atomic>
 #include <string>
@@ -44,4 +45,5 @@ namespace GLOBALS {
 	// Data Members
 	static std::atomic<bool> isCommandLineActive = true;
 	static std::filesystem::path workingDir;
+	//static std::filesystem::path home_directory = std::getenv("USERPROFILE");
 }

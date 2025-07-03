@@ -22,7 +22,7 @@ void initCommandLine() {
     
     //set current path to the working path
     std::filesystem::path currentPath = std::filesystem::current_path();
-    GLOBALS::set_workingDir(currentPath.generic_string());
+    GLOBALS::set_workingDir(currentPath);
 
     //set running flag
     GLOBALS::isCommandLineActive = true;
@@ -36,7 +36,7 @@ int main() {
 
         //display current directory
         std::filesystem::path currWorkingDir = GLOBALS::get_workingDir();
-        std::cout << currWorkingDir << "> ";
+        std::cout << currWorkingDir.string() << "> ";
         
         //grab the full line from console
         std::string input;

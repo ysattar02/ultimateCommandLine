@@ -9,53 +9,16 @@ using namespace GLOBALS;
 void listFiles(std::vector <std::string>& fullCmd) {
 
 	std::filesystem::path path;
-	int flag = 0;
 
 	if (fullCmd.size() < 2)
 		path = GLOBALS::get_workingDir();
 	else {
 		for (int i = 1; i < fullCmd.size(); i++) {
 			if (fullCmd[i][0] == '-') {
-				if (fullCmd[i][1] == 'l') {
-					flag = 1;
-				}
-				else if (fullCmd[i][1] == 'a') {
-					flag = 2;
-				}
-				else if (fullCmd[i][1] == 'h') {
-					flag = 3;
-				}
-				else if (fullCmd[i][1] == 't') {
-					flag = 4;
-				}
-				else if (fullCmd[i][1] == 'r') {
-					flag = 5;
-				}
-				else if (fullCmd[i][1] == 'R') {
-					flag = 6;
-				}
-				else if (fullCmd[i][1] == 'S') {
-					flag = 7;
-				}
-				else if (fullCmd[i][1] == '1') {
-					flag = 8;
-				}
-				else if (fullCmd[i][1] == 'l') {
-					flag = 9;
-				}
-				else if (fullCmd[i][1] == 'd') {
-					flag = 10;
-				}
-				else if (fullCmd[i][1] == 'f') {
-					flag = 11;
-				}
-				else {
-					std::cout << "Command not recognized";
-					return;
-				}
+				continue;
 			}
 			else
-				path += fullCmd[i];
+				path += fullCmd[i] + "\\";
 
 		}
 	}
@@ -63,41 +26,7 @@ void listFiles(std::vector <std::string>& fullCmd) {
 	std::vector<std::filesystem::path> directories = listDirInPath(path);
 
 	for (int i = 0; i < directories.size(); i++) {
-		if (flag == 0)
-			std::cout << directories[i].filename().string() << std::endl;
-		else if (flag == 1) {
-
-		}
-		else if (flag == 2) {
-
-		}
-		else if (flag == 3) {
-
-		}
-		else if (flag == 4) {
-
-		}
-		else if (flag == 5) {
-
-		}
-		else if (flag == 6) {
-
-		}
-		else if (flag == 7) {
-
-		}
-		else if (flag == 8) {
-
-		}
-		else if (flag == 9) {
-
-		}
-		else if (flag == 10) {
-
-		}
-		else {
-
-		}
+		std::cout << directories[i].filename().string() << std::endl;
 	}
 
 	return;
@@ -116,15 +45,27 @@ void changeDirectory(std::vector <std::string>& fullCmd) {
 			return;
 		}
 		else {
+			std::filesystem::path new_path;
 			if (fullCmd[1] == "..") {
 				// go back a directory and set to workingDir
-				//std::filesystem::path new_path = std::filesystem::current_path().parent_path();
-				//std::filesystem::current_path() = new_path;
-				//GLOBALS::set_workingDir(new_path.string());
+				new_path = GLOBALS::get_workingDir().parent_path();
+				GLOBALS::set_workingDir(new_path);
 				return;
 			}
-			else if (fullCmd[1] == ".") {
-				// go back to parent directory
+			else if (fullCmd[1] == "~") {
+				// go to home directory
+				//new_path = GLOBALS::home_directory;
+				//GLOBALS::set_workingDir(new_path);
+				return;
+			}
+			else if (fullCmd[1] == "-") {
+				// go back to previous directory
+				return;
+			}
+			else if (fullCmd[1] == "/") {
+				// go to root directory
+				new_path = GLOBALS::get_workingDir().root_directory();
+				GLOBALS::set_workingDir(new_path);
 				return;
 			}
 			else {
@@ -216,5 +157,5 @@ void removeDirectory(std::vector <std::string>& fullCmd) {
 
 void printWorkingDir(void) {
 
-	std::cout << GLOBALS::get_workingDir() << std::endl;
+	std::cout << GLOBALS::get_workingDir().string() << std::endl;
 }
