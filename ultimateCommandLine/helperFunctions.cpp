@@ -30,16 +30,15 @@ int commandStringToEnum(const std::string &command) {
 std::vector<std::filesystem::path> listDirInPath(const std::filesystem::path& path) {
 
     std::vector<std::filesystem::path> directories;
-    std::filesystem::path directorypath = path;
 
     // To check if the directory exists or not
-    if (std::filesystem::exists(directorypath)
-        && std::filesystem::is_directory(directorypath)) {
+    if (std::filesystem::exists(path)
+        && std::filesystem::is_directory(path)) {
 
         // Loop through each item (file or subdirectory) in the directory
 
         for (const auto& entry :
-            std::filesystem::directory_iterator(directorypath)) {
+            std::filesystem::directory_iterator(path)) {
 
             // Store the path of the file or subdirectory to vector
             directories.push_back(entry.path());
