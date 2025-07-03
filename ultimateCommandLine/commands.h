@@ -13,14 +13,28 @@
 
 /*************************************************************
 	Function Name - listFiles()
-	@brief List all files in current directory
+	@brief List all files in current directory "ls"
 	@param Vector of std::string containing entire command word by word
 *************************************************************/
 void listFiles(std::vector <std::string> &fullCmd);
 
 /*************************************************************
 	Function Name - changeDirectory()
-	@brief Changes current to specified directory
+	@brief Changes current to specified directory "cd"
 	@param Vector of std::string containing entire command word by word
 *************************************************************/
 void changeDirectory(std::vector <std::string>& fullCmd);
+
+/*************************************************************
+	Function Name - removeFile()
+	@brief Implements functionality of "rm"
+	@param Vector of std::string containing entire command word by word
+*************************************************************/
+void removeFile(std::vector <std::string>& fullCmd);
+
+/*************************************************************
+	Function Name - removeDirectory()
+	@brief Implements functionality of "rmdir"
+	@param Vector of std::string containing entire command word by word
+*************************************************************/
+void removeDirectory(std::vector <std::string>& fullCmd);

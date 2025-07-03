@@ -11,6 +11,8 @@ using namespace GLOBALS;
 enum COMMANDS {
     LS = 1,
     CD = 2,
+    RM = 3,
+    RMDIR = 4,
     QUIT = 99,
     UNKNOWN = 100
 };
@@ -68,6 +70,12 @@ int main() {
                 break;
             case CD:
                 changeDirectory(parsedInput);
+                break;
+            case RM:
+                removeFile(parsedInput);
+                break;
+            case RMDIR:
+                removeDirectory(parsedInput);
                 break;
             case UNKNOWN:
                 std::cerr << "Command Not Recognized" << std::endl;

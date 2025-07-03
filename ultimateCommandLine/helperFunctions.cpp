@@ -6,6 +6,8 @@
 std::unordered_map <std::string, int> COMMANDMAPPING = {
 	{"ls", 1},
 	{"cd", 2},
+    {"rm", 3},
+    {"rmdir", 4},
 	{"quit", 99}
 };
 
@@ -34,15 +36,13 @@ std::vector<std::filesystem::path> listDirInPath(const std::string& path) {
     if (std::filesystem::exists(directorypath)
         && std::filesystem::is_directory(directorypath)) {
 
-        // Loop through each item (file or subdirectory) in
-        // the directory
+        // Loop through each item (file or subdirectory) in the directory
 
         for (const auto& entry :
             std::filesystem::directory_iterator(directorypath)) {
 
             // Store the path of the file or subdirectory to vector
             directories.push_back(entry.path());
-
         }
 
         return directories;
