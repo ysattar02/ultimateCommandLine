@@ -37,6 +37,13 @@ void removeFile(std::vector <std::string>& fullCmd);
 void removeDirectory(std::vector <std::string>& fullCmd);
 
 /*************************************************************
+	Function Name - touchFile()
+	@brief Implements functionality of "touch"
+	@param Vector of std::string containing entire command word by word
+*************************************************************/
+void touchFile(std::vector <std::string>& fullCmd);
+
+/*************************************************************
 	Function Name - makeDirectory()
 	@brief Implements functionality of "mkdir"
 	@param Vector of std::string containing entire command word by word

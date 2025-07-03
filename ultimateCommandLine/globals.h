@@ -4,6 +4,8 @@
 #include <filesystem>
 #include <atomic>
 #include <string>
+#include <fstream>
+#include <sstream>
 #include <sstream>
 #include <vector>
 

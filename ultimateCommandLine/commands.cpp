@@ -215,6 +215,35 @@ void removeDirectory(std::vector <std::string>& fullCmd) {
 	return;
 }
 
+void touchFile(std::vector <std::string>& fullCmd) {
+
+	//base case
+	if (fullCmd.size() > 2) {
+		return;
+	}
+
+	//filepath to file to touch
+	std::filesystem::path target = fullCmd[1];
+
+	//resolve path to absolute
+	if (!target.is_absolute()) {
+		target = GLOBALS::workingDir.string() + target.string();
+	}
+
+	//make sure file doesn't exist
+	bool flag = std::filesystem::exists(target);
+	if (flag) {
+		std::cerr << "File Already Exists" << std::endl;
+		return;
+	}
+
+	//make the file
+	std::ofstream myFile(target);
+	myFile.close();
+
+	return;
+}
+
 void makeDirectory(std::vector <std::string>& fullCmd) {
 
 	//base case 

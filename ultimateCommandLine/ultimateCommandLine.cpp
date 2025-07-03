@@ -79,6 +79,9 @@ int main() {
             case PWD:
                 printWorkingDir();
                 break;
+            case TOUCH:
+                touchFile(parsedInput);
+                break;
             case MKDIR:
                 makeDirectory(parsedInput);
                 break;
