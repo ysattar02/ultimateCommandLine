@@ -8,12 +8,7 @@
 *.json
 *.ipch
 *.suo
-<<<<<<< HEAD
 *.db
 *.obj
 *.exe
-=======
-*.obj
-*.exe
-*.db
->>>>>>> y_changeDirectory
+ultimateCommandLine/ultimate.44c30762
