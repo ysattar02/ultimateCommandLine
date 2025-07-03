@@ -118,6 +118,9 @@ void changeDirectory(std::vector <std::string>& fullCmd) {
 		else {
 			if (fullCmd[1] == "..") {
 				// go back a directory and set to workingDir
+				//std::filesystem::path new_path = std::filesystem::current_path().parent_path();
+				//std::filesystem::current_path() = new_path;
+				//GLOBALS::set_workingDir(new_path.string());
 				return;
 			}
 			else if (fullCmd[1] == ".") {
