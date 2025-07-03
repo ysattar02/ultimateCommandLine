@@ -26,6 +26,7 @@ void listFiles(std::vector <std::string> &fullCmd);
 void changeDirectory(std::vector <std::string>& fullCmd);
 
 /*************************************************************
+<<<<<<< HEAD
 	Function Name - removeFile()
 	@brief Implements functionality of "rm"
 	@param Vector of std::string containing entire command word by word
@@ -38,3 +39,10 @@ void removeFile(std::vector <std::string>& fullCmd);
 	@param Vector of std::string containing entire command word by word
 *************************************************************/
 void removeDirectory(std::vector <std::string>& fullCmd);
+=======
+	Function Name - printWorkingDir()
+	@brief Prints the currrent working directory 
+	@param none
+*************************************************************/
+void printWorkingDir(void);
+>>>>>>> bccae5c9f259e3c58c1037ea88b7f14e34367d5b

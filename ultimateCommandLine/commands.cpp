@@ -118,6 +118,9 @@ void changeDirectory(std::vector <std::string>& fullCmd) {
 		else {
 			if (fullCmd[1] == "..") {
 				// go back a directory and set to workingDir
+				//std::filesystem::path new_path = std::filesystem::current_path().parent_path();
+				//std::filesystem::current_path() = new_path;
+				//GLOBALS::set_workingDir(new_path.string());
 				return;
 			}
 			else if (fullCmd[1] == ".") {
@@ -134,6 +137,7 @@ void changeDirectory(std::vector <std::string>& fullCmd) {
 	return;
 }
 
+<<<<<<< HEAD
 void removeFile(std::vector <std::string>& fullCmd) {
 
 	//all rm commands need to be adjusuted to an absolute path
@@ -209,4 +213,10 @@ void removeDirectory(std::vector <std::string>& fullCmd) {
 	}
 
 	return;
+=======
+void printWorkingDir(void) {
+	
+	std::cout << GLOBALS::get_workingDir() << std::endl;;
+
+>>>>>>> bccae5c9f259e3c58c1037ea88b7f14e34367d5b
 }
