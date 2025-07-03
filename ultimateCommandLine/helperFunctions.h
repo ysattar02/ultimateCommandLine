@@ -28,4 +28,4 @@ int commandStringToEnum(const std::string& fullCommand);
 	@brief Return the list of directories in the specified path
 	@param std::string - Path to list directories from 
 *************************************************************/
-std::vector<std::string> listDirInPath(const std::string& path);
+std::vector<std::filesystem::path> listDirInPath(const std::string& path);
