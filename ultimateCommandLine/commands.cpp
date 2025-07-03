@@ -137,7 +137,6 @@ void changeDirectory(std::vector <std::string>& fullCmd) {
 	return;
 }
 
-<<<<<<< HEAD
 void removeFile(std::vector <std::string>& fullCmd) {
 
 	//all rm commands need to be adjusuted to an absolute path
@@ -213,10 +212,9 @@ void removeDirectory(std::vector <std::string>& fullCmd) {
 	}
 
 	return;
-=======
-void printWorkingDir(void) {
-	
-	std::cout << GLOBALS::get_workingDir() << std::endl;;
+}
 
->>>>>>> bccae5c9f259e3c58c1037ea88b7f14e34367d5b
+void printWorkingDir(void) {
+
+	std::cout << GLOBALS::get_workingDir() << std::endl;
 }

@@ -6,12 +6,9 @@
 std::unordered_map <std::string, int> COMMANDMAPPING = {
 	{"ls", 1},
 	{"cd", 2},
-<<<<<<< HEAD
     {"rm", 3},
     {"rmdir", 4},
-=======
     {"pwd", 5},
->>>>>>> bccae5c9f259e3c58c1037ea88b7f14e34367d5b
 	{"quit", 99}
 };
 
