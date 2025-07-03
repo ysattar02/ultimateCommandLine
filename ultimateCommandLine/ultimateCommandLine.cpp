@@ -35,7 +35,7 @@ int main() {
     while (isCommandLineActive) {
 
         //display current directory
-        std::string currWorkingDir = GLOBALS::get_workingDir();
+        std::filesystem::path currWorkingDir = GLOBALS::get_workingDir();
         std::cout << currWorkingDir << "> ";
         
         //grab the full line from console

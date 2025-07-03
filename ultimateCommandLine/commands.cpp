@@ -8,7 +8,7 @@ using namespace GLOBALS;
 
 void listFiles(std::vector <std::string>& fullCmd) {
 
-	std::string path = "";
+	std::filesystem::path path;
 	int flag = 0;
 
 	if (fullCmd.size() < 2)
@@ -171,7 +171,7 @@ void removeDirectory(std::vector <std::string>& fullCmd) {
 	//check if absolute and resolve if it isn't
 	std::string temp;
 	if (!target.is_absolute()) { //this is the bug, absolute is taking the path to exe
-		target = (std::filesystem::absolute(target).string());
+		target = GLOBALS::workingDir.string() + target.string();
 		//std::replace(temp.begin(), temp.end(), '/', '\\');
 	}
 

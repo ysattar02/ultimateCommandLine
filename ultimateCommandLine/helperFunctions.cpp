@@ -28,7 +28,7 @@ int commandStringToEnum(const std::string &command) {
 	}
 }
 
-std::vector<std::filesystem::path> listDirInPath(const std::string& path) {
+std::vector<std::filesystem::path> listDirInPath(const std::filesystem::path& path) {
 
     std::vector<std::filesystem::path> directories;
     std::filesystem::path directorypath = path;

@@ -32,16 +32,16 @@ namespace GLOBALS {
 	@brief Setter for the workingDir data member
 	@param Filepath to set the data member to
 *************************************************************/
-	void set_workingDir(std::string filePath);
+	void set_workingDir(std::filesystem::path filePath);
 
 /*************************************************************
 	Function Name - set_workingDir()
 	@brief Getter for the workingDir data member
 	@param N/A
 *************************************************************/
-	std::string get_workingDir();
+	std::filesystem::path get_workingDir();
 
 	// Data Members
 	static std::atomic<bool> isCommandLineActive = true;
-	static std::string workingDir;
+	static std::filesystem::path workingDir;
 }
