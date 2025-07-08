@@ -56,3 +56,10 @@ void makeDirectory(std::vector <std::string>& fullCmd);
 	@param none
 *************************************************************/
 void printWorkingDir(void);
+
+/*************************************************************
+	Function Name - makeDir()
+	@brief Makes a new directory
+	@param Vector of std::string containing entire command word by word
+*************************************************************/
+void makeDir(std::vector<std::string>& fullCmd);

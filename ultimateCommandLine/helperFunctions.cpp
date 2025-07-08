@@ -6,8 +6,12 @@ std::unordered_map <std::string, int> COMMANDMAPPING = {
     {"rm", 3},
     {"rmdir", 4},
     {"pwd", 5},
+<<<<<<< HEAD
     {"touch", 6},
     {"mkdir", 7},
+=======
+    {"mkdir", 6},
+>>>>>>> Jay_Working
 	{"quit", 99}
 };
 

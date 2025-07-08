@@ -10,8 +10,12 @@ enum COMMANDS {
     RM = 3,
     RMDIR = 4,
     PWD = 5,
+<<<<<<< HEAD
     TOUCH = 6,
     MKDIR = 7,
+=======
+    MK = 6,
+>>>>>>> Jay_Working
     QUIT = 99,
     UNKNOWN = 100
 };
@@ -79,11 +83,16 @@ int main() {
             case PWD:
                 printWorkingDir();
                 break;
+<<<<<<< HEAD
             case TOUCH:
                 touchFile(parsedInput);
                 break;
             case MKDIR:
                 makeDirectory(parsedInput);
+=======
+            case MK:
+                makeDir(parsedInput);
+>>>>>>> Jay_Working
                 break;
             case UNKNOWN:
                 std::cerr << "Command Not Recognized" << std::endl;
