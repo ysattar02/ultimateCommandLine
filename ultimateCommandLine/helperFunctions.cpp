@@ -9,6 +9,7 @@ std::unordered_map <std::string, int> COMMANDMAPPING = {
     {"rm", 3},
     {"rmdir", 4},
     {"pwd", 5},
+    {"mkdir", 6},
 	{"quit", 99}
 };
 

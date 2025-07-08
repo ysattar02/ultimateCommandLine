@@ -14,6 +14,7 @@ enum COMMANDS {
     RM = 3,
     RMDIR = 4,
     PWD = 5,
+    MK = 6,
     QUIT = 99,
     UNKNOWN = 100
 };
@@ -79,6 +80,9 @@ int main() {
                 removeDirectory(parsedInput);
             case PWD:
                 printWorkingDir();
+                break;
+            case MK:
+                makeDir(parsedInput);
                 break;
             case UNKNOWN:
                 std::cerr << "Command Not Recognized" << std::endl;

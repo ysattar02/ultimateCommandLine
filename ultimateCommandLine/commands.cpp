@@ -159,3 +159,31 @@ void printWorkingDir(void) {
 
 	std::cout << GLOBALS::get_workingDir().string() << std::endl;
 }
+
+void makeDir(std::vector<std::string>& fullCmd) {
+
+	std::filesystem::path path;
+
+	if (!fullCmd[1].find("\\")) {
+		path = GLOBALS::get_workingDir();
+		path += "\\" + fullCmd[1];
+	}
+	else {
+		path = fullCmd[1];
+	}
+
+	try {
+		if (std::filesystem::create_directory(path)) {
+			std::cout << "Directory created successfully at: " << path << std::endl;
+		}
+		else {
+			std::cout << "Directory already exists or could not be created at: " << path << std::endl;
+		}
+	}
+	catch (const std::filesystem::filesystem_error& e) {
+		std::cerr << "Error creating directory: " << e.what() << std::endl;
+	}
+
+	return;
+
+}
