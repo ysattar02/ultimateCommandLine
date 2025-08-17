@@ -10,12 +10,9 @@ enum COMMANDS {
     RM = 3,
     RMDIR = 4,
     PWD = 5,
-<<<<<<< HEAD
     TOUCH = 6,
     MKDIR = 7,
-=======
-    MK = 6,
->>>>>>> Jay_Working
+    MK = 8,
     QUIT = 99,
     UNKNOWN = 100
 };
@@ -83,16 +80,14 @@ int main() {
             case PWD:
                 printWorkingDir();
                 break;
-<<<<<<< HEAD
             case TOUCH:
                 touchFile(parsedInput);
                 break;
             case MKDIR:
                 makeDirectory(parsedInput);
-=======
+                break;
             case MK:
                 makeDir(parsedInput);
->>>>>>> Jay_Working
                 break;
             case UNKNOWN:
                 std::cerr << "Command Not Recognized" << std::endl;
@@ -100,6 +95,9 @@ int main() {
             case QUIT:
                 std::cout << "Command Line Terminating" << std::endl;
                 isCommandLineActive = false;
+
+                // Allow the user time to read the message
+                std::this_thread::sleep_for(std::chrono::milliseconds(1000));
                 break;
             default:
                 std::cerr << "Command Not Recognized" << std::endl;
