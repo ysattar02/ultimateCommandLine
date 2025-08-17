@@ -63,3 +63,17 @@ void printWorkingDir(void);
 	@param Vector of std::string containing entire command word by word
 *************************************************************/
 void makeDir(std::vector<std::string>& fullCmd);
+
+/*************************************************************
+	Function Name - displaySystemSpecs()
+	@brief Displays current system specs
+	@param none
+*************************************************************/
+void displaySystemSpecs();
+
+/*************************************************************
+	Function Name - getIP()
+	@brief Displays ip address
+	@param none
+*************************************************************/
+void getIP();

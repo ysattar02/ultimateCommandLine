@@ -247,5 +247,46 @@ void makeDir(std::vector<std::string>& fullCmd) {
 	}
 
 	return;
+}
 
+void displaySystemSpecs() {
+
+	// Windows API struct to contain spec info
+	SYSTEM_INFO siSysInfo;
+	GetSystemInfo(&siSysInfo);
+
+	std::string processorName = "";
+	if (siSysInfo.wProcessorArchitecture == 9) {
+		processorName = "x64 (AMD || Intel)";
+	}
+	else if (siSysInfo.wProcessorArchitecture == 5) {
+		processorName = "ARM";
+	}
+	else if (siSysInfo.wProcessorArchitecture == 12) {
+		processorName = "ARM64";
+	}
+	else if (siSysInfo.wProcessorArchitecture == 6) {
+		processorName = "Intel Itanium-Based";
+	}
+	else if (siSysInfo.wProcessorArchitecture == 0) {
+		processorName = "x86";
+	}
+	else {
+		processorName = "Unknown Architecture";
+	}
+
+	// Calculate total ram installed on the system
+	ULONGLONG totalKilobytes = 0;
+	GetPhysicallyInstalledSystemMemory(&totalKilobytes);
+
+	// Display to the screen
+	std::cout << "Processor Architecture: " << processorName << std::endl;
+	std::cout << "Page Size: " << siSysInfo.dwPageSize << std::endl;
+	std::cout << "Physically Installed Memory (gb): " << totalKilobytes / 1024 / 1024 << std::endl;
+
+	return;
+}
+
+void getIP() {
+	return;
 }

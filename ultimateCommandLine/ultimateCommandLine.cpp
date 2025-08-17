@@ -13,6 +13,9 @@ enum COMMANDS {
     TOUCH = 6,
     MKDIR = 7,
     MK = 8,
+    IP = 9,
+    WHOAMI = 10,
+    SYS_SPEC = 98,
     QUIT = 99,
     UNKNOWN = 100
 };
@@ -51,7 +54,7 @@ int main() {
             parsedInput.push_back(token);
         }
 
-        //container to hold switch case
+        //container to hold switch case choice
         int cmdNum;
 
         //do an empty check
@@ -88,6 +91,15 @@ int main() {
                 break;
             case MK:
                 makeDir(parsedInput);
+                break;
+            case IP:
+                getIP();
+                break;
+            case WHOAMI:
+                // For Jay
+                break;
+            case SYS_SPEC:
+                displaySystemSpecs();
                 break;
             case UNKNOWN:
                 std::cerr << "Command Not Recognized" << std::endl;

@@ -1,14 +1,17 @@
 #include "helperFunctions.h"
 
 std::unordered_map <std::string, int> COMMANDMAPPING = {
-	{"ls", 1},
-	{"cd", 2},
+    {"ls", 1},
+    {"cd", 2},
     {"rm", 3},
     {"rmdir", 4},
     {"pwd", 5},
     {"touch", 6},
     {"mkdir", 7},
     {"mk", 8},
+    {"ifconfig", 9},
+    {"whoami", 10},
+    {"system_spec", 98},
 	{"quit", 99}
 };
 

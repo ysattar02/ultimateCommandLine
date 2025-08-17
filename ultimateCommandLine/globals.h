@@ -11,6 +11,9 @@
 #include <thread>
 #include <vector>
 
+// Windows Specific Includes
+#include <windows.h>
+
 
 namespace GLOBALS {
 
