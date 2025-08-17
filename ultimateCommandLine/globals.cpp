@@ -1,7 +1,5 @@
 #include "globals.h"
 
-
-
 void GLOBALS::set_isCommandLineActive(bool flag) {
 	isCommandLineActive = flag;
 }

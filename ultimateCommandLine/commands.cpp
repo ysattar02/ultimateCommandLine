@@ -251,6 +251,7 @@ void makeDir(std::vector<std::string>& fullCmd) {
 
 void displaySystemSpecs() {
 
+#ifdef _WIN32
 	// Windows API struct to contain spec info
 	SYSTEM_INFO siSysInfo;
 	GetSystemInfo(&siSysInfo);
@@ -283,6 +284,11 @@ void displaySystemSpecs() {
 	std::cout << "Processor Architecture: " << processorName << std::endl;
 	std::cout << "Page Size: " << siSysInfo.dwPageSize << std::endl;
 	std::cout << "Physically Installed Memory (gb): " << totalKilobytes / 1024 / 1024 << std::endl;
+#endif //_WIN32
+
+#ifndef _WIN32
+	std::cout << "Feature Only Available on WIN32" << std::endl;
+#endif //_WIN32
 
 	return;
 }

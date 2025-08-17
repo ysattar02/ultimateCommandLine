@@ -56,5 +56,4 @@ std::vector<std::filesystem::path> listDirInPath(const std::filesystem::path& pa
         // Handle the case where the directory doesn't exist
         std::cerr << "Directory not found." << std::endl;
     }
-
 }

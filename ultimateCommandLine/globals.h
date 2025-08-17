@@ -11,9 +11,9 @@
 #include <thread>
 #include <vector>
 
-// Windows Specific Includes
-#include <windows.h>
-
+#ifdef _WIN32
+	#include <windows.h>
+#endif //_WIN32
 
 namespace GLOBALS {
 
