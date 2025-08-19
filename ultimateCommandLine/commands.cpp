@@ -383,3 +383,37 @@ void displaySystemSpecs() {
 void getIP() {
 	return;
 }
+
+void whoami(std::vector<std::string>& fullCmd) {
+
+	if (fullCmd.size() < 2) {
+
+		char computerName[MAX_COMPUTERNAME_LENGTH + 1]; // Buffer for the computer name
+		DWORD cnameSize = sizeof(computerName); // Size of the buffer in characters
+
+		if (GetComputerNameA(computerName, &cnameSize)) { // Use GetComputerNameA for ANSI characters
+			std::cout << computerName << "\\";
+		}
+		else {
+			std::cerr << "Failed to get computer name. Error code: " << GetLastError() << std::endl;
+		}
+
+		TCHAR username[UNLEN + 1]; // Buffer to store the username
+		DWORD userSize = UNLEN + 1;    // Size of the buffer
+
+		// Call GetUserName to retrieve the username
+		if (GetUserName(username, &userSize)) {
+			// Print the username to the console
+			std::wcout << username << std::endl;
+		}
+		else {
+			// Handle error if GetUserName fails
+			std::wcerr << L"Failed to retrieve username. Error code: " << GetLastError() << std::endl;
+		}
+
+		return;
+	}
+	else {
+		return;
+	}
+}

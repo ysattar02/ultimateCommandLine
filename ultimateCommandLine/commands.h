@@ -4,6 +4,8 @@
 #include <iostream>
 #include <unordered_map>
 #include <string>
+#include <Windows.h>
+#include <lmcons.h>
 #include "helperFunctions.h"
 #include "globals.h"
 
@@ -77,3 +79,10 @@ void displaySystemSpecs();
 	@param none
 *************************************************************/
 void getIP();
+
+/*************************************************************
+	Function Name - whoami()
+	@brief Displays user information and permissions
+	@param Vector of std::string containing entire command word by word
+*************************************************************/
+void whoami(std::vector<std::string>& fullCmd);

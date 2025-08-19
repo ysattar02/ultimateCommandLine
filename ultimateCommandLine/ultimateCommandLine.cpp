@@ -96,7 +96,7 @@ int main() {
                 getIP();
                 break;
             case WHOAMI:
-                // For Jay
+                whoami(parsedInput);
                 break;
             case SYS_SPEC:
                 displaySystemSpecs();
