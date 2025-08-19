@@ -2,6 +2,8 @@
 **/x64/
 
 # Ignore Visual Studio user-specific project files
+.vs/
+.ipch/
 *.vcxproj.user
 *.vcxproj.filters
 *.vsidx
@@ -11,5 +13,18 @@
 *.db
 *.obj
 *.exe
+*.user
+*.userosscache
+*.sln.docstates
+*.opendb
+*.ipch
+*.pdb
+*.idb
+*.ilk
+*.log
+*.cache
+*.exe
+*.dll
+*.bak
 ultimateCommandLine/ultimate.44c30762
 ultimateCommandLine/.vs
