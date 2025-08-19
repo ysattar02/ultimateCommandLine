@@ -280,10 +280,97 @@ void displaySystemSpecs() {
 	ULONGLONG totalKilobytes = 0;
 	GetPhysicallyInstalledSystemMemory(&totalKilobytes);
 
+	// Calculate information about the cache
+	DWORD len = 0;
+
+	// This call is to get the size of the buffer using nullptr to ensure failure
+	PSYSTEM_LOGICAL_PROCESSOR_INFORMATION logicalProcessorInfo = nullptr;
+	GetLogicalProcessorInformation(logicalProcessorInfo, &len);
+
+	// Now malloc the struct with the acquired size
+	logicalProcessorInfo = (PSYSTEM_LOGICAL_PROCESSOR_INFORMATION)malloc(len);
+
+	// Make the call again to get the real data
+	GetLogicalProcessorInformation(logicalProcessorInfo, &len);
+
 	// Display to the screen
 	std::cout << "Processor Architecture: " << processorName << std::endl;
 	std::cout << "Page Size: " << siSysInfo.dwPageSize << std::endl;
 	std::cout << "Physically Installed Memory (gb): " << totalKilobytes / 1024 / 1024 << std::endl;
+
+	// Calculate number of entries in logicalProcessorInfo struct
+	DWORD entryCount = len / sizeof(SYSTEM_LOGICAL_PROCESSOR_INFORMATION);
+
+	// Display logical processor info
+	std::cout << std::endl << "Logical Processor Information:" << std::endl;
+	
+	size_t currEntryCount = 1;
+	for (DWORD i = 0; i < entryCount; i++) {
+
+		// Assign the data to a temp container
+		PSYSTEM_LOGICAL_PROCESSOR_INFORMATION currInfo = &logicalProcessorInfo[i];
+
+		// Go through the struct using a case statement
+		std::string flag = "";
+		switch (currInfo->Relationship) {
+			case RelationProcessorCore:
+				std::cout << "=== Entry #" << currEntryCount << " ===" << std::endl;
+				currEntryCount++;
+				std::cout << "Relation: Processor Core: " << std::endl;
+				(currInfo->ProcessorCore.Flags & 1) ? flag = "Hyperthreading Enabled" : flag = "Hyperthreading Disabled";
+				std::cout << "Flag: " << flag << std::endl;
+				break;
+			case RelationNumaNode:
+				std::cout << "Relation: Numa Node" << std::endl;
+				std::cout << "Numa Node Number: " << currInfo->NumaNode.NodeNumber << std::endl;
+				break;
+			case RelationCache:
+				std::cout << "Relation: Cache" << std::endl;
+
+				if (currInfo->Cache.Level == 1) {
+					std::cout << "Cache Level: " << "L1" << std::endl;
+				}
+				else if (currInfo->Cache.Level == 2) {
+					std::cout << "Cache Level: " << "L2" << std::endl;
+				}
+				else if (currInfo->Cache.Level == 3) {
+					std::cout << "Cache Level: " << "L3" << std::endl;
+				}
+				else {
+					std::cout << "Cache Level: " << "Unknown" << std::endl;
+				}
+
+				if (currInfo->Cache.Type == 0) {
+					std::cout << "Cache Type: " << "CacheUnified" << std::endl;
+				}
+				else if (currInfo->Cache.Type == 1) {
+					std::cout << "Cache Type: " << "CacheInstruction" << std::endl;
+				}
+				else if (currInfo->Cache.Type == 2) {
+					std::cout << "Cache Type: " << "CacheTrace" << std::endl;
+				}
+				else {
+					std::cout << "Cache Type: " << "CacheUnknown" << std::endl;
+				}
+
+				std::cout << "Cache Size (kb): " << currInfo->Cache.Size / 1024 << std::endl;
+				break;
+			case RelationProcessorPackage:
+				std::cout << "Relation: Processor Package" << std::endl;
+				break;
+			case RelationGroup:
+				std::cout << "Relation: Group" << std::endl;
+				break;
+			default:
+				std::cout << "Relation: Unknown" << std::endl;
+				break;
+		}
+		std::cout << std::endl;
+	}
+
+	// Free the mallocd memory
+	free(logicalProcessorInfo);
+	logicalProcessorInfo = nullptr;
 #endif //_WIN32
 
 #ifndef _WIN32

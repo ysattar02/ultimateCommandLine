@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:commands.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\commands.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:commands.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\ultimateCommandLine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:ultimateCommandLine.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\commands.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|solutionrelative:commands.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{44C30762-07C9-4193-A487-732631742869}|ultimateCommandLine.vcxproj|C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\globals.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -50,8 +50,7 @@
               "RelativeToolTip": "globals.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-07T23:34:24.56Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T23:34:24.56Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "globals.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-03T23:30:34.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T23:30:34.295Z"
             },
             {
               "$type": "Document",
@@ -74,7 +72,7 @@
               "RelativeDocumentMoniker": "commands.cpp",
               "ToolTip": "C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\commands.cpp",
               "RelativeToolTip": "commands.cpp",
-              "ViewState": "AgIAAKEAAAAAAAAAAAAAAAcBAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAE4BAAAAAAAAAAAAABkBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-07-03T01:26:22.213Z",
               "EditorCaption": ""
@@ -89,12 +87,11 @@
               "RelativeToolTip": "helperFunctions.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-07-07T22:35:29.53Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T22:35:29.53Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ultimateCommandLine.cpp",
               "DocumentMoniker": "C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\ultimateCommandLine.cpp",
               "RelativeDocumentMoniker": "ultimateCommandLine.cpp",
@@ -119,7 +116,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "commands.h",
               "DocumentMoniker": "C:\\Users\\Destr\\Documents\\c\u002B\u002B\\ultimateCommandLine\\ultimateCommandLine\\commands.h",
               "RelativeDocumentMoniker": "commands.h",
@@ -127,8 +124,7 @@
               "RelativeToolTip": "commands.h",
               "ViewState": "AgIAAC8AAAAAAAAAAAAAAE4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-07-03T03:06:47.24Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-03T03:06:47.24Z"
             }
           ]
         }
