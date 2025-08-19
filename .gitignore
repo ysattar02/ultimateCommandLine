@@ -1,30 +1,66 @@
 # Ignore all x64 build folders
 **/x64/
 
-# Ignore Visual Studio user-specific project files
+# Build results
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+*.log
+
+# Visual Studio cache & settings
 .vs/
-.ipch/
-*.vcxproj.user
-*.vcxproj.filters
-*.vsidx
-*.json
-*.ipch
 *.suo
-*.db
-*.obj
-*.exe
 *.user
 *.userosscache
 *.sln.docstates
-*.opendb
-*.ipch
-*.pdb
-*.idb
-*.ilk
-*.log
-*.cache
+
+# Compiled binary files
 *.exe
 *.dll
+*.pdb
+*.mdb
+*.idb
+*.ilk
+*.lib
+
+# Intermediate files
+*.obj
+*.pch
+*.ipch
+*.tmp
+*.cache
 *.bak
-ultimateCommandLine/ultimate.44c30762
-ultimateCommandLine/.vs
+
+# Profiling
+*.psess
+*.vsp
+*.vspx
+*.sap
+
+# Database files
+*.opendb
+*.VC.db
+*.VC.opendb
+
+# Other junk
+*.tlog
+*.lastbuildstate
+*.log
+*.sdf
+
+# Ignore ReSharper & Rider
+_ReSharper*/
+*.DotSettings.user
+
+# Ignore CMake build folders
+CMakeFiles/
+CMakeCache.txt
+cmake-build-*/
+
+# Ignore vcpkg installed packages
+vcpkg_installed/
+
+# Ignore NuGet packages
+*.nupkg
+*.snupkg
+packages/
