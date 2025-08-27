@@ -21,7 +21,10 @@ enum COMMANDS {
 };
 
 void initCommandLine() {
-    
+
+    // Set log level (static so exists)
+    SingletonLogger::getInstance()->setLoglevel(SingletonLogger::LOG_LEVEL::TRACE);
+
     //set current path to the working path
     std::filesystem::path currentPath = std::filesystem::current_path();
     GLOBALS::set_workingDir(currentPath);
@@ -102,17 +105,17 @@ int main() {
                 displaySystemSpecs();
                 break;
             case UNKNOWN:
-                std::cerr << "Command Not Recognized" << std::endl;
+                LOG_WARNING("Command Not Recognized");
                 break;
             case QUIT:
-                std::cout << "Command Line Terminating" << std::endl;
+                LOG_WARNING("Command Line Terminating");
                 isCommandLineActive = false;
 
                 // Allow the user time to read the message
                 std::this_thread::sleep_for(std::chrono::milliseconds(1000));
                 break;
             default:
-                std::cerr << "Command Not Recognized" << std::endl;
+                LOG_WARNING("Command Not Recognized");
                 break;
         }
     }

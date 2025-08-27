@@ -10,6 +10,7 @@
 #include <chrono>
 #include <thread>
 #include <vector>
+#include "sessionLogger.h"
 
 #ifdef _WIN32
 	#include <windows.h>
