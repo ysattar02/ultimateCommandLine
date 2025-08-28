@@ -18,6 +18,9 @@ private:
 	// Private constructor
 	SingletonLogger() : m_logFilePath(""), m_logLevel(static_cast<uint16_t>(SingletonLogger::LOG_LEVEL::TRACE)) {
 
+		// Get a handle to the console
+		m_consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
+
 		std::string exePath = getExePath();
 		std::string utcTime = getCurrentUTCTime();
 		m_logFilePath = exePath + "\\log_" + utcTime + ".txt";
@@ -42,6 +45,9 @@ private:
 
 	// Log level
 	uint16_t m_logLevel;
+
+	// Console handle
+	HANDLE m_consoleHandle;
 
 public:
 

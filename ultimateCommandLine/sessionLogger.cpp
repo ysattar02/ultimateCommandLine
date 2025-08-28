@@ -95,10 +95,25 @@ void SingletonLogger::log(const std::string& fileName, long lineNumber, LOG_LEVE
     // Calculate the log level
     std::string currLogLevel = SingletonLogger::m_logLevelsAsStrings[logLevelIndex];
 
-    // Print to console
-    std::cout << "[" << currLogLevel << "] " << msg << std::endl;
+    // If the log level is fatal, set console to red
+    if (m_logLevel == static_cast<uint16_t>(LOG_LEVEL::FATAL)) {
 
-    // Log the message
+        // Set to red text
+        SetConsoleTextAttribute(m_consoleHandle, FOREGROUND_RED);
+
+        // Print to console
+        std::cout << "[" << currLogLevel << "] " << msg << std::endl;
+
+        // Revert back to normal text
+        SetConsoleTextAttribute(m_consoleHandle, FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE);
+    }
+    else {
+
+        // Print to console
+        std::cout << "[" << currLogLevel << "] " << msg << std::endl;
+    }
+
+    // Log the message to logfile
     SingletonLogger::m_logFile << "[" << currLogLevel << "] " << fileName << " (" << lineNumber << "): " << msg << std::endl;
 
     return;
